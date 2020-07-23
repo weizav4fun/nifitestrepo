@@ -8,7 +8,37 @@
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
-        "connections" : [ ],
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "12736d5a-c7b4-3601-b148-73fc1655889f",
+            "id" : "67337a26-ed24-347d-8104-e4d8afc508e7",
+            "name" : "CompressContent",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "12736d5a-c7b4-3601-b148-73fc1655889f",
+          "identifier" : "1bbd2e64-4931-308e-bbf2-09796ed66281",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "set state fail" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "12736d5a-c7b4-3601-b148-73fc1655889f",
+            "id" : "46c837f0-df68-3463-beab-6e146fb9861b",
+            "name" : "AttributeRollingWindow",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
         "controllerServices" : [ ],
         "funnels" : [ ],
         "identifier" : "12736d5a-c7b4-3601-b148-73fc1655889f",
